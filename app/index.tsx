@@ -1,13 +1,15 @@
 import React from 'react';
 import {ThemedText} from "@/components/ThemedText";
 import {RandomColorContainer} from "@/components/RandomColorContainer";
+import TextMainScreen from "@/components/TextMainScreen";
+import TextMainList from "@/components/TextMainList";
 
-function Index() {
+export default function Index() {
     return (
         <RandomColorContainer>
-            <ThemedText>Hello there</ThemedText>
+            <TextMainScreen/>
+            {/*Open this component to show history of previous colors*/}
+            {false && <TextMainList/>}
         </RandomColorContainer>
     );
 }
-
-export default Index;
